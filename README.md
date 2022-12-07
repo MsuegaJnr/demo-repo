@@ -15,16 +15,18 @@
 
 Installation
 
-https://winlibs.com/
-Download latest verion and extract into a folder 
+-- Visit 'https://winlibs.com/' to download cpp compilers
+
+-- Download latest verion and extract into a folder 
 (eg. GCC 12.2.0 + LLVM/Clang/LLD/LLDB 14.0.6 + MinGW-w64 10.0.0 (UCRT) - release 2   (LATEST))
 
 C:\mingw64
 
-set to path in environment variables
+-- Set to path in environment variables
 C:\mingw64\bin
 
 
+-- Versions confirmation
 To check g++ compiler verion
 open command prompt with 'cmd'
 g++ --version        --> 12.1.0
@@ -39,11 +41,11 @@ clang++ --version    --> 14.0.6
 Configuration in VScode (Windows OS)
 ####################################
 
-Step0:-- Write a script eg 'hello_world.cpp' and configure a json tasks template file for compilation 
+Step 0:-- Write a script eg 'hello_world.cpp' and configure a json tasks template file for compilation 
 
-Step1:-- Select the hello_world.cpp file in explorer space
-Step2:-- Terminal menu --> Configure tasks... --> compiler:C:\mingw\bin\g++.exe
-Step3:-- A 'tasks.json' file is auto generated. Edit the file to become like the code below: 
+Step 1:-- Select the hello_world.cpp file in explorer space
+Step 2:-- Terminal menu --> Configure tasks... --> compiler:C:\mingw\bin\g++.exe
+Step 3:-- A 'tasks.json' file is auto generated. Edit the file to become like the code below: 
 
 //'tasks.json' file
 {
@@ -73,10 +75,10 @@ Step3:-- A 'tasks.json' file is auto generated. Edit the file to become like the
 	]
 }
 
-Step4:-- Select the hello_world.cpp --> Terminal menu --> Run task.. -->Build with GCC 12.1.0
+Step 4:-- Select the hello_world.cpp --> Terminal menu --> Run task.. -->Build with GCC 12.1.0
       -- The 'hello_world.cpp' file is compiled and a 'hello_world.exe' file is generated.
 
-Step5:-- Run the .exe file in the terminal
+Step 5:-- Run the .exe file in the terminal
       -- .\hello_world.exe
 
 
